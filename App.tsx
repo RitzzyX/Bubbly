@@ -1,8 +1,8 @@
 
 import React, { useState, useCallback } from 'react';
-import { NICKNAMES, AFFIRMATIONS } from './constants';
-import FlipCard from './components/FlipCard';
-import TransitionWrapper from './components/TransitionWrapper';
+import { NICKNAMES, AFFIRMATIONS } from './constants.tsx';
+import FlipCard from './components/FlipCard.tsx';
+import TransitionWrapper from './components/TransitionWrapper.tsx';
 
 type Step = 'PROPOSAL' | 'AFFIRMATIONS' | 'LETTER';
 
@@ -16,7 +16,6 @@ const App: React.FC = () => {
     const btnHeight = 50;
     const padding = 40;
     
-    // Calculate safe boundaries
     const maxX = window.innerWidth - btnWidth - padding;
     const maxY = window.innerHeight - btnHeight - padding;
     
@@ -139,7 +138,7 @@ const App: React.FC = () => {
               You are not just a part of my life. You are the softest part of it. The safest part of it. The brightest, warmest, most beautiful part of it.
             </p>
             <p>
-              Before you, life was moving. After you, life started <span className="text-[#BC5449] italic font-normal">meaning</span> something. You walked into my world so quietly, like a gentle breeze… but somehow you became the air I breathe. I didn’t even realize when you stopped being “someone I love” and became “someone I can’t imagine a single day without.”
+              Before you, life was moving. After you, life started <span className="text-[#BC5449] italic font-normal">meaning</span> something. You walked into my world so quietly, like a gentle breeze, but somehow you became the air I breathe. I didn’t even realize when you stopped being “someone I love” and became “someone I can’t imagine a single day without.”
             </p>
             <p>
               {NICKNAMES.HER}, you don’t understand what you are to me. You are the person I think about when something good happens. You are the person I want when something bad happens. You are the first name my heart calls, even before my mind does.
@@ -155,7 +154,7 @@ const App: React.FC = () => {
               <span className="block mt-4 italic text-[#9E7676]">You are my favorite contradiction.</span>
             </p>
             <p>
-              Sometimes I just sit and think… how did I get so lucky? How did the universe decide that I deserved someone like you? Someone who feels so deeply. Someone who loves so intensely. Someone who chooses me, every single day.
+              Sometimes I just sit and think, how did I get so lucky? How did the universe decide that I deserved someone like you? Someone who feels so deeply. Someone who loves so intensely. Someone who chooses me, every single day.
             </p>
             <p>
               You are not just my girlfriend. You are my peace. You are my comfort. You are my home. And home is not a place. <span className="text-[#BC5449] font-medium italic">It’s you.</span>
@@ -167,7 +166,7 @@ const App: React.FC = () => {
               {NICKNAMES.HER}, you have seen sides of me that the world never will. The softer side. The scared side. The vulnerable side. The side that only feels safe because you’re there. You make me want to be better. Not because you demand it. But because loving you makes me want to deserve you.
             </p>
             <p>
-              You calm my chaos. You balance my intensity. You understand my silence. You read my eyes. And that… that is rare. You are the only person who can quiet my storm without even trying.
+              You calm my chaos. You balance my intensity. You understand my silence. You read my eyes. And that, that is rare. You are the only person who can quiet my storm without even trying.
             </p>
             <p>
               When I think about the future, I don’t see luxury or success first. I see you. I see us laughing over stupid things. I see us fighting and making up. I see us building something meaningful. I see you holding my hand in rooms full of people. I see you beside me when life gets hard. I see you when my hair turns grey.
@@ -176,7 +175,7 @@ const App: React.FC = () => {
               Because loving you is not a phase. It is not excitement. It is not infatuation. It is intentional. It is deep. It is permanent.
             </p>
             <p>
-              You deserve a love that is patient. A love that reassures. A love that protects. A love that chooses you even on the difficult days. And I promise you, {NICKNAMES.MUNCHKIN}… I choose you.
+              You deserve a love that is patient. A love that reassures. A love that protects. A love that chooses you even on the difficult days. And I promise you, {NICKNAMES.MUNCHKIN}, I choose you.
             </p>
             <p>
               I choose you every single time. I love the way you care. I love the way you listen. I love the way you remember little details. I love how you make even ordinary days feel special. I love how you become childlike when you’re happy. I love how you soften when you feel safe.
